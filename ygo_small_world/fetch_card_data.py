@@ -13,7 +13,7 @@ def fetch_card_data() -> None:
     housing_url = 'https://db.ygoprodeck.com/api/v7/cardinfo.php'
     res =  requests.get(housing_url, timeout=10)
     response = json.loads(res.text)
-    current_dir = os.path.dirname(os.path.abspath(__file__))
+    current_dir = os.path.dirname(os.path.abspath("."))
     cardinfo_path = os.path.join(current_dir, "cardinfo.json")
 
     # Load the contents of cardinfo.json

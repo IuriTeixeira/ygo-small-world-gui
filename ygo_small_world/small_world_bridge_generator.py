@@ -51,7 +51,7 @@ def load_cards() -> pd.DataFrame:
         pd.DataFrame: A DataFrame containing information about all cards, 
                       including their ID, name, type, attribute, level, attack, and defense.
     '''
-    current_dir = os.path.dirname(os.path.abspath(__file__))
+    current_dir = os.path.dirname(os.path.abspath("."))
     cardinfo_path = os.path.join(current_dir, 'cardinfo.json')
 
     # ensure that card data exists

@@ -2,5 +2,8 @@ __pycache__
 examples/images/small-wolrd-graph.png
 examples/images/small-world-matrix.png
 examples/images/small-world-matrix-squared.png
+build/
+dist/
 .vscode
 deck.ydk
+*.spec

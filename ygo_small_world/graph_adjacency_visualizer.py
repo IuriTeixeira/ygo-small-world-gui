@@ -23,6 +23,8 @@ import requests
 from PIL import Image
 import pandas as pd
 import numpy as np
+import matplotlib
+matplotlib.use('WXAgg')  # Set the interactive TkAgg backend
 import matplotlib.pyplot as plt
 import networkx as nx
 
@@ -52,7 +54,7 @@ def names_to_image_urls(card_names: list[str]) -> list[str]:
     Returns:
         list: A list of URLs corresponding to the card images.
     '''
-    current_dir = os.path.dirname(os.path.abspath(__file__))
+    current_dir = os.path.dirname(os.path.abspath("."))
     cardinfo_path = os.path.join(current_dir, "cardinfo.json")
 
     # Load the contents of cardinfo.json
